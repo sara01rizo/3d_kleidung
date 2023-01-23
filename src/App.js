@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './components/styles/Global'
 import { Container } from './components/styles/Container.styled'
 import Banner from './components/Banner'
 import Card from './components/Card'
@@ -16,6 +17,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
+        <GlobalStyles />
         <Banner />
         <Container>
           {content.map((item, index) => (
